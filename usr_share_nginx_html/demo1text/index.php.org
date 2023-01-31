@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="a.css">
+<title>Demo#1</title>
+<?php date_default_timezone_set ('Asia/Tokyo'); ?>
+</head>
+<body>
+<h1>Hello</h1>
+IP Address: 
+<?php echo $_SERVER['REMOTE_ADDR']; ?><br>
+<?php echo date('Y-m-d H:i:s'); ?>
+<br>
+<table border="1">
+<tr><th>Header name</th><th>Value</th></tr>
+<?php
+foreach (getallheaders() as $name => $value) {
+    echo "<tr><td>$name:</td><td>$value</td></tr>";
+}
+?>
+</table>
+
+</body>
+</html>

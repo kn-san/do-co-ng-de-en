@@ -108,6 +108,7 @@ td {
   </style>
 </head>
 <body>
+<img src="NGINX-Plus-horiz-black-type-xxx01.png" width="150px"><br>
 
   Your Info.
 
